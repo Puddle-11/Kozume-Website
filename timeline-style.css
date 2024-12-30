@@ -1,0 +1,28 @@
+
+
+.clock-container {
+    text-align: center;
+    background-image: url(./assets/images/Koz\ Background.png);
+    background-size: 100%;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#elapsed-time {
+    font-size: 20px;
+    font-weight: bold;
+}
+.time-card{
+    display: flexbox;
+    flex-direction: row;
+    outline: none;
+}
+.clock-value{
+    margin: 0px;
+    display: inline-block;
+}
