@@ -104,9 +104,11 @@ h2
         display: grid;
         place-self: center;
         grid-template-rows: repeat(5, 75px);
-        width: 80vw;
+        width: 70vw;
         border-radius: 20px;
-        padding: 30px;
+    }
+    .letter-display section{
+        margin: 10px;
     }
 
 
@@ -264,6 +266,7 @@ justify-content: center;
 
     margin: 10px;
     width: calc((var(--ncell-size) * 2));
+
     border-radius: calc(var(--ncell-size) * 0.05);
     background-image: url(../images/Koz\ Main\ Background.png);
     background-size: 100%;
