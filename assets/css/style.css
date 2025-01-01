@@ -232,13 +232,24 @@ justify-content: center;
         place-self: center;
         grid-template-columns: repeat(4, 220px);
         grid-template-rows: repeat(2, 220px);
-        border-radius: 10px;
     }
     .global_grid .button{
         width: 100%;
         height: 100%;
     }
-
+    .global_grid.r1{
+        border-top-left-radius: 20px;
+    }
+    .global_grid.r2{
+        border-top-right-radius: 20px;
+    }
+    .global_grid.r3{
+        border-bottom-left-radius: 20px;
+    }
+    .global_grid.r4{
+        border-bottom-right-radius: 20px;
+    }
+    
 }
 
 
@@ -248,6 +259,7 @@ justify-content: center;
     --nborder-radius: calc(var(var(--ncell-size) / 2));
     --collumn-gap-grid: 2.5vw;
 }
+
 .global_grid{
 
     margin: 10px;
@@ -260,6 +272,19 @@ justify-content: center;
     grid-template-rows: repeat(4, var(--ncell-size));
     margin: auto;
 }
+.global_grid.r1{
+    border-top-left-radius: var(--collumn-gap-grid);
+}
+.global_grid.r2{
+    border-top-right-radius: var(--collumn-gap-grid);
+}
+.global_grid.r3{
+    border-bottom-left-radius: var(--collumn-gap-grid);
+}
+.global_grid.r4{
+    border-bottom-right-radius: var(--collumn-gap-grid);
+}
+
 .global_grid section{
     margin: var(--collumn-gap-grid);
 }
@@ -323,69 +348,21 @@ justify-content: center;
 
 
 
-.global-grid{
 
-    column-gap: 15px;
-    row-gap: 10px;
-    align-self: center;
-    outline: none;
-    place-items: center;
-    display: grid;
-    place-self: center;
-    grid-template-columns: repeat(4, 220px);
-    grid-template-rows: repeat(auto-fit, 220px);
-    width: 1fr;
-    padding: 30px;
-}
 
-@media (max-width: 1000px) and (min-width: 600px) 
-{
-    
-    .global-grid{
-        column-gap: 15px;
-        row-gap: 10px;
-        align-self: center;
-        outline: none;
-        place-items: center;
-        display: grid;
-        place-self: center;
-        grid-template-columns: repeat(2, 220px);
-        grid-template-rows: repeat(4, 220px);
-        width: 1fr;
-        padding: 30px;
-    }
-    .global-grid section:nth-child(1){
-        order: 0;
-    }   
-    .global-grid section:nth-child(2){
-        order: 3;
-
-    }
-    .global-grid section:nth-child(3){
-        order: 1;
-
-    }
-    .global-grid section:nth-child(4){
-        order: 4;
-
-    }
-    .global-grid section:nth-child(5){
-        order: 2;
-    }
-}
+.r1{
+    border-top-left-radius: 110px;
+  }
+  .r2{
+    border-top-right-radius: 110px;
+  }
+  .r3{
+     border-bottom-left-radius: 110px;
+  }
+  .r4{
+     border-bottom-right-radius: 110px;
+  }
 @media (min-width: 600px){
-    .r1{
-        border-top-left-radius: 110px;
-      }
-      .r2{
-        border-top-right-radius: 110px;
-      }
-      .r3{
-         border-bottom-left-radius: 110px;
-      }
-      .r4{
-         border-bottom-right-radius: 110px;
-      }
       .text-box.large
     {
       font-size: 60px;
@@ -408,49 +385,7 @@ justify-content: center;
         --cell-size: 30vw;
         --border-radius: calc(var(var(--cell-size) / 2));
     }
-    .global-grid{
-        column-gap: 15px;
-        row-gap: 10px;
-        align-self: center;
-        outline: none;
-        place-items: center;
-        display: grid;
-        place-self: center;
-        grid-template-columns: repeat(2, var(--cell-size));
-        grid-template-rows: repeat(4, var(--cell-size));
-        width: 1fr;
-        padding: 30px;
-    }
-    .global-grid section:nth-child(1){
-        order: 0;
-    }   
-    .global-grid section:nth-child(2){
-        order: 3;
-    
-    }
-    .global-grid section:nth-child(3){
-        order: 1;
-    
-    }
-    .global-grid section:nth-child(4){
-        order: 4;
-    
-    }
-    .global-grid section:nth-child(5){
-        order: 2;
-    }
-    .r1{
-        border-top-left-radius: 0;
-    }
-    .r2{
-        border-top-right-radius: 0;
-    }
-    .r3{
-        border-bottom-left-radius: 0;
-    }
-    .r4{
-        border-bottom-right-radius:0;
-    }
+
 
     .text-box.large:not(.dont-scale)
     {
@@ -686,13 +621,7 @@ justify-content: center;
 
 
 
-
-
-.global-grid.style-1{
-background-color: #121515;
-
-}
-.global-grid.style-2{
+.global_grid.style-2{
     background-image: url("../images/Koz\ Background.png");
     background-size: cover;
 }
@@ -986,18 +915,6 @@ a
     width: 100%;
     height: 100%;
     place-items: center;
-}
-.global-grid.r1{
-    border-top-left-radius: 20px;
-}
-.global-grid.r2{
-    border-top-right-radius: 20px;
-}
-.global-grid.r3{
-    border-bottom-left-radius: 20px;
-}
-.global-grid.r4{
-    border-bottom-right-radius: 20px;
 }
 
 
