@@ -89,16 +89,24 @@ h2
     text-align: center;
     background-image: url(../images/Koz\ Background.png);
     background-size: 100%;
-    padding: 20px 40px;
-    border-radius: 10px;
+    border-radius: 5vw;
+    margin: 20px;
+    overflow: none;
+    padding: 5%;
+
     }
-    .letter-display section{
-        margin: 10px;
-    }
+
 
 .letter-display .button{
     width: 100px;
 
+}
+
+.letter-button
+{
+height: 8vw;
+width: 1fr;
+margin: 2% 2%;
 }
 .letter-display.style-1{
     background-color: #121515;
@@ -144,6 +152,8 @@ h2
 .floating-button:hover{
     transform: scale(1.1);
 }
+
+
 .letter-box{
 
     display: flex;
