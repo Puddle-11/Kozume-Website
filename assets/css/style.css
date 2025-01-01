@@ -82,7 +82,7 @@ h2
     margin: 0px;
 }
 
-
+@media (max-width: 600px){
     .letter-display{
         display: flex;
     flex-direction: column;
@@ -96,7 +96,22 @@ h2
 
     }
 
+}
+@media (min-width: 600px){
+    .letter-display{
+        display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(../images/Koz\ Background.png);
+    background-size: 100%;
+    border-radius: 5vw;
+    margin: auto;
+    width: 500px;
+    overflow: none;
+    padding: 5%;
 
+    }
+}
 .letter-display .button{
     width: 100px;
 
