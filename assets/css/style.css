@@ -461,8 +461,8 @@ justify-content: center;
     .photo-grid
     {
         display: grid;
-        grid-template-columns: repeat(4, var(--photo-size));
-        grid-template-rows: repeat(10, var(--photo-size));
+        grid-template-columns: repeat(4, 220px);
+        grid-template-rows: repeat(10, 220px);
         place-self: center;
         background-image: url(../images/Koz\ Background.png);
         background-size: 100%;
@@ -475,8 +475,8 @@ justify-content: center;
     .photo-grid
     {
         display: grid;
-        grid-template-columns: repeat(2, var(--photo-size));
-        grid-template-rows: repeat(10, var(--photo-size));
+        grid-template-columns: repeat(2, 220px);
+        grid-template-rows: repeat(10,220px);
         place-self: center;
         background-image: url(../images/Koz\ Background.png);
         background-size: 100%;
