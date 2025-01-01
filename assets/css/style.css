@@ -455,15 +455,33 @@ justify-content: center;
     }
 }
 
-.photo-grid
+@media (min-width: 1000px)
 {
-    display: grid;
-    grid-template-columns: repeat(4, var(--photo-size));
-    grid-template-rows: repeat(10, var(--photo-size));
-    place-self: center;
-    background-image: url(../images/Koz\ Background.png);
-   background-size: 100%;
-    
+
+    .photo-grid
+    {
+        display: grid;
+        grid-template-columns: repeat(4, var(--photo-size));
+        grid-template-rows: repeat(10, var(--photo-size));
+        place-self: center;
+        background-image: url(../images/Koz\ Background.png);
+        background-size: 100%;
+    }
+
+}
+@media (max-width: 1000px)
+{
+
+    .photo-grid
+    {
+        display: grid;
+        grid-template-columns: repeat(2, var(--photo-size));
+        grid-template-rows: repeat(10, var(--photo-size));
+        place-self: center;
+        background-image: url(../images/Koz\ Background.png);
+        background-size: 100%;
+    }
+
 }
 @media (max-width: 1000px)
 {
