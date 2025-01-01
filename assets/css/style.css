@@ -37,6 +37,7 @@ body
     align-items: center;
 
 }
+
 .home-button
 {
     width: 50px;
@@ -190,20 +191,84 @@ h2
 body header{
     margin: 0px;
 }
-.grid-wrapper {
 
+
+
+
+
+
+
+
+.grid-wrapper {
+    display: flexbox;
     flex-flow: column;
     gap: 10px;
     overflow: visible;
     outline: 1px;
 margin: 0px;
 width: 100vw;
+justify-content: center;
+
 }
 .global-flex{
     display: flexbox;
     outline: none;
     width: 100%;
 }
+
+
+
+
+
+:root {
+    --ncell-size: 30vw;
+    --nborder-radius: calc(var(var(--ncell-size) / 2));
+    --collumn-gap-grid: 1vw;
+}
+.global_grid{
+
+    margin: 10px;
+    column-gap: var(--collumn-gap-grid);
+    row-gap: 10px;
+    width: calc((var(--ncell-size) * 2) + var(--collumn-gap-grid));
+    border-radius: 20px;
+    background-image: url(../images/Koz\ Main\ Background.png);
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, var(--ncell-size));
+    grid-template-rows: repeat(3, var(--ncell-size));
+margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .global-grid{
 
