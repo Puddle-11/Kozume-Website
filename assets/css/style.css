@@ -104,8 +104,9 @@ h2
 
 .letter-button
 {
-height: 8vw;
+    display: inline-flex;
 width: 1fr;
+padding: 15px;
 margin: 2% 2%;
 }
 .letter-display.style-1{
