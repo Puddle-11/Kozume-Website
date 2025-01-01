@@ -18,6 +18,8 @@ h1 {
 }
 .clock-container 
 {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     background-image: url(../images/Koz\ Background.png);
     background-size: 100%;
@@ -26,12 +28,32 @@ h1 {
 }
 @media (min-width: 600px){
     .time-card{
-        display: inline-flex;
+        display: flexbox;
+        justify-content: center;
         flex-direction: row;
         outline: none;
     }
     .time-card section{
         outline: none;
+    }
+    .clock-container .time-card section:nth-child(1){
+        order: 1;
+    }
+    .clock-container .time-card section:nth-child(2){
+        order: 2;
+
+    }
+    .clock-container .time-card section:nth-child(3){
+        order: 3;
+    }
+    .clock-container .time-card section:nth-child(4){
+        order: 4;
+    }
+    .clock-container .time-card section:nth-child(5){
+        order: 5;
+    }
+    .clock-container .time-card section:nth-child(6){
+        order: 6;
     }
 }
 
@@ -48,5 +70,8 @@ h1 {
 .time-event{
     height: 70px;
     border-radius: 10px;
+}
+.time-event .text-box{
+    margin: 0px;
 }
 
