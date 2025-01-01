@@ -220,12 +220,33 @@ justify-content: center;
 
 
 
+@media (min-width: 1000px){
+
+    .global_grid{
+
+       gap: 15px;
+       padding: 15px;
+        align-self: center;
+        place-items: center;
+        display: grid;
+        place-self: center;
+        grid-template-columns: repeat(4, 220px);
+        grid-template-rows: repeat(2, 220px);
+        border-radius: 10px;
+    }
+    .global_grid .button{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
 
 @media (max-width: 1000px){
 :root {
     --ncell-size: 40vw;
     --nborder-radius: calc(var(var(--ncell-size) / 2));
-    --collumn-gap-grid: 2vw;
+    --collumn-gap-grid: 2.5vw;
 }
 .global_grid{
 
@@ -236,15 +257,44 @@ justify-content: center;
     background-size: 100%;
     display: grid;
     grid-template-columns: repeat(2, var(--ncell-size));
-    grid-template-rows: repeat(3, var(--ncell-size));
+    grid-template-rows: repeat(4, var(--ncell-size));
     margin: auto;
 }
 .global_grid section{
     margin: var(--collumn-gap-grid);
 }
-
+.global_grid section.r1{
+ border-top-left-radius: calc((var(--ncell-size) - var(--collumn-gap-grid)) / 2);
+}
+.global_grid section.r2{
+    border-top-right-radius: calc((var(--ncell-size) - var(--collumn-gap-grid)) / 2);
+   }
+   .global_grid section.r3{
+    border-bottom-left-radius: calc((var(--ncell-size) - var(--collumn-gap-grid)) / 2);
+   }
+   .global_grid section.r4{
+    border-bottom-right-radius: calc((var(--ncell-size) - var(--collumn-gap-grid)) / 2);
+   }
+.global_grid section:nth-child(1){
+    order: 0;
+}   
+.global_grid section:nth-child(2){
+    order: 3;
 
 }
+.global_grid section:nth-child(3){
+    order: 1;
+
+}
+.global_grid section:nth-child(4){
+    order: 4;
+
+}
+.global_grid section:nth-child(5){
+    order: 2;
+}
+}
+
 
 
 
@@ -810,12 +860,11 @@ filter:blur(0px);
     user-select: none;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    height: 100%;
-    width: 100%;
+    height: 1fr;
+    width: 1fr;
     overflow: hidden;
     transition-duration: 300ms;
     place-items: center;
-    margin: 0px;
 }
 
 
