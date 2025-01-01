@@ -107,7 +107,7 @@ h2
     display: inline-flex;
 width: 1fr;
 padding: 15px;
-height: 100px;
+height: 1fr;
 margin: 2% 2%;
 }
 .letter-display.style-1{
