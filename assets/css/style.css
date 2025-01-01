@@ -107,7 +107,7 @@ h2
     display: inline-flex;
 width: 1fr;
 padding: 15px;
-height: 1fr;
+height: 1;
 margin: 2% 2%;
 }
 .letter-display.style-1{
@@ -131,13 +131,11 @@ margin: 2% 2%;
     width: 250px;
     height: 50px;
     justify-content: center;
-    align-self: center;
-    place-self: center;
+  
     border-radius: 10px;
     background-image: url("../images/Koz\ Background.png");
     background-size: 500px;
-    place-items: center;
-    text-align: center;
+    margin: auto;
     transition-duration: 300ms;
 
 }
