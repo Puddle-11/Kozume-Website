@@ -1,12 +1,6 @@
 
 
-.clock-container {
-    text-align: center;
-    background-image: url(./assets/images/Koz\ Background.png);
-    background-size: 100%;
-    padding: 20px 40px;
-    border-radius: 10px;
-}
+
 
 h1 {
     font-size: 24px;
@@ -17,12 +11,42 @@ h1 {
     font-size: 20px;
     font-weight: bold;
 }
-.time-card{
-    display: flexbox;
-    flex-direction: row;
-    outline: none;
-}
+
 .clock-value{
     margin: 0px;
     display: inline-block;
 }
+.clock-container 
+{
+    text-align: center;
+    background-image: url(./assets/images/Koz\ Background.png);
+    background-size: 100%;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+@media (min-width: 600px){
+    .time-card{
+        display: flexbox;
+        flex-direction: row;
+        outline: none;
+    }
+    .time-card section{
+        outline: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .time-card{
+        display:inline-flex;
+        flex-direction: column-reverse;
+        outline: none;
+    }
+    .time-card section{
+        margin: 10px;
+    }
+}
+.time-event{
+    height: 70px;
+    border-radius: 10px;
+}
+
