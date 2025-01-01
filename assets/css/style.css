@@ -220,28 +220,31 @@ justify-content: center;
 
 
 
+
+@media (max-width: 1000px){
 :root {
-    --ncell-size: 30vw;
+    --ncell-size: 40vw;
     --nborder-radius: calc(var(var(--ncell-size) / 2));
-    --collumn-gap-grid: 1vw;
+    --collumn-gap-grid: 2vw;
 }
 .global_grid{
 
     margin: 10px;
-    column-gap: var(--collumn-gap-grid);
-    row-gap: 10px;
-    width: calc((var(--ncell-size) * 2) + var(--collumn-gap-grid));
-    border-radius: 20px;
+    width: calc((var(--ncell-size) * 2));
+    border-radius: calc(var(--ncell-size) * 0.05);
     background-image: url(../images/Koz\ Main\ Background.png);
     background-size: 100%;
     display: grid;
     grid-template-columns: repeat(2, var(--ncell-size));
     grid-template-rows: repeat(3, var(--ncell-size));
-margin: auto;
+    margin: auto;
+}
+.global_grid section{
+    margin: var(--collumn-gap-grid);
 }
 
 
-
+}
 
 
 
