@@ -455,34 +455,18 @@ justify-content: center;
     }
 }
 
-@media (min-width: 1000px)
-{
+
 
     .photo-grid
     {
         display: grid;
-        grid-template-columns: repeat(4, 220px);
-        grid-template-rows: repeat(10, 220px);
-        place-self: center;
-        background-image: url(../images/Koz\ Background.png);
-        background-size: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 220px);
+        
     }
 
-}
-@media (max-width: 1000px)
-{
 
-    .photo-grid
-    {
-        display: grid;
-        grid-template-columns: repeat(2, 220px);
-        grid-template-rows: repeat(10,220px);
-        place-self: center;
-        background-image: url(../images/Koz\ Background.png);
-        background-size: 100%;
-    }
 
-}
 @media (max-width: 1000px)
 {
 :root{
