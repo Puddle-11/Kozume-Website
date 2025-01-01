@@ -1,6 +1,6 @@
 @font-face {
     font-family: Header-Font;
-    src: url(./assets/fonts/Caseopia\ Demo.otf);
+    src: url(../fonts/Caseopia\ Demo.otf);
 }
 
 @font-face {
@@ -27,7 +27,7 @@ body
     display: flex;
     flex-flow: column;
     justify-content: center;
-    background-image: url(./assets/images/Koz\ Main\ Background.png);
+    background-image: url(../images/Koz\ Main\ Background.png);
     background-size: 100%;
     background-attachment: fixed;
     padding: 0;
@@ -41,7 +41,7 @@ body
 {
     width: 50px;
     height: 50px;
-    background-image: url(./assets/images/Home\ Icon.png);
+    background-image: url(../images/Home\ Icon.png);
     background-size: 100%;
     outline: none;
     transition-duration: 300ms;
@@ -119,7 +119,7 @@ h2
     
     }
 .letter-display.style-2{
-    background-image: url("./assets/images/Koz\ Background.png");
+    background-image: url("../images/Koz\ Background.png");
     background-size: cover;
 }
 .letter-display .button{
@@ -138,7 +138,7 @@ h2
     align-self: center;
     place-self: center;
     border-radius: 10px;
-    background-image: url("./assets/images/Koz\ Background.png");
+    background-image: url("../images/Koz\ Background.png");
     background-size: 500px;
     place-items: center;
     text-align: center;
@@ -171,7 +171,7 @@ h2
 }
 
 .letter-box.style-2{
-    background-image: url("./assets/images/Koz\ Background.png");
+    background-image: url("../images/Koz\ Background.png");
     background-size: cover;
 }
 .letter-box.r1{
@@ -575,7 +575,7 @@ background-color: #121515;
 
 }
 .global-grid.style-2{
-    background-image: url("./assets/images/Koz\ Background.png");
+    background-image: url("../images/Koz\ Background.png");
     background-size: cover;
 }
 .fixed-bg{
