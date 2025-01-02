@@ -703,7 +703,6 @@ section{
 .text-box.vertical{
     writing-mode: vertical-lr;  
     text-orientation: upright;
-    height: 100%;
 
 }
 .text-box.force-center{
@@ -715,7 +714,6 @@ section{
     align-items: center;
     text-align: center;
     width: 1fr;
-    color: white;
 }
 .text-box.align-left-center{
     grid-row: 1;
