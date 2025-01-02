@@ -708,7 +708,7 @@ section{
     -webkit-text-orientation: upright;
     text-orientation: upright;
         letter-spacing: 0.05em; /* Adds spacing between characters */
-     
+        word-spacing: 0.5em;
 }
 .text-box.force-center{
     grid-row: 1;
