@@ -46,7 +46,7 @@ body
     background-image: url(../images/Home\ Icon.png);
     background-size: 100%;
     outline: none;
-    transition-duration: 300ms;
+    transition-duration: 200ms;
     margin: 0px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -122,9 +122,19 @@ h2
 {
     display: inline-flex;
 width: 1fr;
-padding: 15px;
+padding: 0px;
 height: 1;
 margin: 2% 2%;
+transition-duration: 200ms;
+}
+.letter-button:hover{
+    transform: scale(1.1);
+}
+.letter-button a{
+    width: 1fr;
+    height: 1fr;
+    padding: 15px;
+
 }
 .letter-display.style-1{
     background-color: #121515;
@@ -152,7 +162,7 @@ margin: 2% 2%;
     background-image: url("../images/Koz\ Background.png");
     background-size: 500px;
     margin: auto;
-    transition-duration: 300ms;
+    transition-duration: 200ms;
 
 }
 .floating-button a{
@@ -233,9 +243,7 @@ body header{
 
 @media (min-width: 1000px){
 
-    :root{
-        
-    }
+   
     .global_grid{
 
        gap: 15px;
@@ -592,7 +600,7 @@ body header{
     width: 1fr;
     height: 1fr;
     margin: calc(var(--photo-size) * 0.05);
-    transition-duration: 300ms;
+    transition-duration: 200ms;
 
 }
 .photo-button:hover
@@ -805,7 +813,7 @@ filter:blur(0px);
     height: 1fr;
     width: 1fr;
     overflow: hidden;
-    transition-duration: 300ms;
+    transition-duration: 200ms;
     place-items: center;
 }
 
@@ -832,7 +840,7 @@ filter:blur(0px);
     grid-column: 1;
     opacity: 0.7;
     filter: blur(4px);
-    transition-duration: 300ms;
+    transition-duration: 200ms;
     width: 100%;
     height: 220px;
     object-fit: cover;
@@ -846,7 +854,7 @@ filter:blur(0px);
     grid-column: 1;
     opacity: 0.7;
     filter: blur(4px);
-    transition-duration: 300ms;
+    transition-duration: 200ms;
     width: 100%;
     object-fit: cover;
     place-items: center;
@@ -857,7 +865,7 @@ filter:blur(0px);
     grid-column: 1;
     opacity: 0.7;
     filter: blur(4px);
-    transition-duration: 300ms;
+    transition-duration: 200ms;
     width: 100%;
     height: 220px;
     place-items: center; 
@@ -912,7 +920,7 @@ a
     height: 100%;
     width: 100%;
     overflow: hidden;
-    transition-duration: 300ms;
+    transition-duration: 200ms;
     place-items: center;
     margin: 0px;
 }
@@ -949,4 +957,19 @@ a
 head
 {
     font-family: Header-Font;
+}
+
+
+#preloader {
+    background: var(--background-color2) url(../images/output-onlinegiftools.gif) no-repeat center center;
+    background-size: 15vh;
+    position: absolute;
+
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
