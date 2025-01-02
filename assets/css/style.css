@@ -340,6 +340,9 @@ body header{
 .global_grid section{
     margin: var(--collumn-gap-grid);
 }
+.global_grid .text-box.vertical{
+margin: 0px;
+}
 .global_grid section.r1{
  border-top-left-radius: calc((var(--ncell-size) - var(--collumn-gap-grid)) / 2);
 }
