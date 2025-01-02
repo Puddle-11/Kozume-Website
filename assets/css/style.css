@@ -215,10 +215,10 @@ body header{
     gap: 10px;
     overflow: visible;
     outline: 1px;
-margin: 0px;
-width: 100vw;
-justify-content: center;
-
+    margin: 0px;
+    width: 100vw;
+    justify-content: center;    
+    align-content: center;
 }
 .global-flex{
     display: flexbox;
@@ -232,6 +232,9 @@ justify-content: center;
 
 @media (min-width: 1000px){
 
+    :root{
+        
+    }
     .global_grid{
 
        gap: 15px;
@@ -260,6 +263,44 @@ justify-content: center;
         border-bottom-right-radius: 20px;
     }
     
+}
+@media (min-width: 1000px)
+{
+    .photo-grid{
+
+        margin: 10px;
+        width: 880px;
+        border-radius: calc(var(--ncell-size) * 0.05);
+        background-image: url(../images/Koz\ Main\ Background.png);
+        background-size: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 220px);
+        grid-template-rows: repeat(10, 220px);
+        overflow: hidden;
+        margin: auto;
+     }
+  
+
+
+}
+
+
+@media (max-width: 1000px){
+    .photo-grid{
+
+        margin: 10px;
+        width: calc((var(--ncell-size) * 2));
+    
+        border-radius: calc(var(--ncell-size) * 0.05);
+        background-image: url(../images/Koz\ Main\ Background.png);
+        background-size: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, var(--ncell-size));
+        grid-template-rows: repeat(10, var(--ncell-size));
+        margin: auto;
+        overflow: hidden;
+    }
+   
 }
 
 
@@ -434,44 +475,15 @@ justify-content: center;
 }
 
 
-
-
-
-@media (min-width: 1000px){
-
-
-
-
-    :root{
-        --photo-size: 220px;
-    }
-    
-    .photo_grid{
-        display: grid;
-        grid-template-columns: repeat(4, var(--photo-size));
-        grid-template-rows: repeat(10, var(--photo-size));
-        place-self: center;
-    
-    }
+:root{
+    --photo-size: 40vw;
 }
-
-
-
-    .photo-grid
-    {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 220px);
-        
-    }
 
 
 
 @media (max-width: 1000px)
 {
-:root{
-    --photo-size: 40vw;
-}
+
 .photo_grid{
     display: grid;
     grid-template-columns: repeat(2, var(--photo-size));
@@ -595,8 +607,8 @@ justify-content: center;
 }
 .photo{
 
-    width: 1fr;
-    height: 1fr;
+    width: 100px;
+    height: 100px;
     margin: calc(var(--photo-size) * 0.1);
 }
 
