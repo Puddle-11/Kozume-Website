@@ -23,6 +23,7 @@ body
     --background-color2: #121515;
     --primary-color: #e3a572;
     --primary-color2: #d29869;
+    background-color: var(--background-color);
     gap: 10px;
     display: flex;
     flex-flow: column;
@@ -279,8 +280,6 @@ body header{
         overflow: hidden;
         margin: auto;
      }
-  
-
 
 }
 
@@ -591,7 +590,7 @@ body header{
 .photo-button{
     width: 1fr;
     height: 1fr;
-    margin: calc(var(--photo-size) * 0.1);
+    margin: calc(var(--photo-size) * 0.05);
     transition-duration: 300ms;
 
 }
@@ -607,9 +606,9 @@ body header{
 }
 .photo{
 
-    width: 100px;
-    height: 100px;
-    margin: calc(var(--photo-size) * 0.1);
+    width: 1fr;
+    height: 1fr;
+    margin: calc(var(--photo-size) * 0.05);
 }
 
 
