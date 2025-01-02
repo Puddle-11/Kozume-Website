@@ -703,6 +703,12 @@ section{
 .text-box.vertical{
     writing-mode: vertical-lr;  
     text-orientation: upright;
+    white-space: nowrap; /* Ensures text doesn't wrap */
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    -webkit-text-orientation: upright;
+    text-orientation: upright;
+        letter-spacing: 0.05em; /* Adds spacing between characters */
 
 }
 .text-box.force-center{
